@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: tardyp/sw_linux_build
+    steps:
+      - checkout
+      - run:
+          name: build
+          command: make all
