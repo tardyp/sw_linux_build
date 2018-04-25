@@ -1,5 +1,6 @@
 # only build in parallel where it is necessary, and try to build serially where possible
-NUMCPU:=$(shell getconf _NPROCESSORS_ONLN)
+NUMCPU:=1
+#$(shell getconf _NPROCESSORS_ONLN)
 
 all:
 	make -C shofel2/exploit
