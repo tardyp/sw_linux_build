@@ -6,5 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
+          name: submodule
+          command: git submodule update --init
+      - run:
           name: build
           command: make all
