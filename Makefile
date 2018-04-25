@@ -5,6 +5,7 @@ all:
 	make -C shofel2/exploit
 	make -C u-boot nintendo-switch_defconfig CROSS_COMPILE=aarch64-linux-gnu- 
 	make -C u-boot  CROSS_COMPILE=aarch64-linux-gnu- 
+	cp misc/tegra_mtc.bin coreboot
 	make -C coreboot nintendo_switch_defconfig
 	make -C coreboot iasl
 	make -C coreboot -j $(NUMCPU)
