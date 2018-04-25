@@ -10,6 +10,7 @@
 [submodule "linux"]
 	path = linux
 	url = https://github.com/fail0verflow/switch-linux.git
+	shallow = true
 [submodule "imx_usb_loader"]
 	path = imx_usb_loader
 	url = https://github.com/boundarydevices/imx_usb_loader.git
